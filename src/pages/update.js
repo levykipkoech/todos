@@ -13,11 +13,11 @@ const Update = () => {
             <label>title</label>
             <input type="text" placeholder="Enter title" value={title} onChange={e => setTitle(e.target.value)} required></input>
             <label>description</label>
-            <input type="text" placeholder="Enter title" value={description} onChange={e => setDescription(e.target.value)} required></input>
-            <label>title</label>
-            <input type="text" placeholder="Enter title" value={status} onChange={e => setStatus(e.target.value)} required></input>
-            <label>title</label>
-            <input type="text" placeholder="Enter title" value={priority} onChange={e => setPriority(e.target.value)} required></input>
+            <input type="text" placeholder="Enter description" value={description} onChange={e => setDescription(e.target.value)} required></input>
+            <label>status</label>
+            <input type="text" placeholder="Enter status" value={status} onChange={e => setStatus(e.target.value)} required></input>
+            <label>priority</label>
+            <input type="text" placeholder="Enter priority" value={priority} onChange={e => setPriority(e.target.value)} required></input>
         
         </form> 
         </div>
