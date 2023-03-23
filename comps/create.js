@@ -1,15 +1,14 @@
-import { useState } from "react";
-
-export default function Update(){
-
+import { useState } from "react"
+const Create = () => {
+     
     const[title, setTitle] =  useState("")
     const[description, setDescription ] = useState("")
     const[status, setStatus] = useState("")
     const[priority, setPriority] = useState("")
 
-    return (
-        <>
-        <form>
+    return ( 
+        <div>
+           <form>
             <label>title</label>
             <input type="text" placeholder="Enter title" value={title} onChange={e => setTitle(e.target.value)} required></input>
             <label>description</label>
@@ -19,7 +18,9 @@ export default function Update(){
             <label>title</label>
             <input type="text" placeholder="Enter title" value={priority} onChange={e => setPriority(e.target.value)} required></input>
         
-        </form>
-        </>
-    )
+        </form>  
+        </div>
+     );
 }
+ 
+export default Create;
