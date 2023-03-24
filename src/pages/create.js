@@ -7,6 +7,11 @@ const Create = () => {
     const[status, setStatus] = useState("")
     const[priority, setPriority] = useState("")
 
+    const CreateTodo = async() => {
+        const res = await fetch('/api/todos')
+        const data = await res.json();
+    }
+
     return ( 
         <>
             <Head>
