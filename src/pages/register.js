@@ -30,35 +30,35 @@ const Registration = () => {
 
     return ( 
         <div>
-            <form onSubmit={handleSubmit} className="px-4 max-w-3xl mx-auto space-y-6 my-30" >
-            <div>
+            <form onSubmit={handleSubmit} className="px-4 max-w-3xl mx-auto space-y-6 my-30 border-t border-grey-200" >
+            <div className="w-1/2">
             <label>username</label>
-            <input className="border border-gray-400 block py-2 px-4 w-full rounded focus:outline-none focus:border-blue-500"
+            <input className="border border-gray-400 block py-2 px-4 w-full rounded focus:outline-none focus:border-blue-900"
             type="text" 
             placeholder="Enter username" 
             value={username} onChange={(e) => setUsername(e.target.value)} 
             required
             /> 
             </div>
-            <div>
+            <div className="w-1/2">
             <label>email</label>
-            <input className="border border-gray-400 block py-2 px-4 w-full rounded focus:outline-none focus:border-blue-500" 
+            <input className="border border-gray-400 block py-2 px-4 w-full rounded focus:outline-none focus:border-blue-900" 
                type="text" 
                placeholder="Enter email" 
                value={email} onChange={(e) => setEmail(e.target.value)} 
                required
             /> 
             </div>
-            <div>
+            <div className="w-1/2">
             <label>password</label>
-            <input className="border border-gray-400 block py-2 px-4 w-full rounded focus:outline-none focus:border-blue-500" 
+            <input className="border border-gray-400 block py-2 px-4 w-full rounded focus:outline-none focus:border-blue-900" 
                type="password" 
                placeholder="Enter password" 
                value={password} onChange={(e) => setPassword(e.target.value)} 
                required
             /> 
             </div>
-            <button>Log in</button>
+            <button type="submit">sign up</button>
          </form>
         </div>
      );

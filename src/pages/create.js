@@ -25,9 +25,9 @@ const Create = () => {
             <Head>
                 <title>Create Todo | Home</title>
             </Head>
-            <div className= "">
+            <div className="text-grey-500">
 
-                <form className="px-4 max-w-3xl mx-auto space-y-6 my-30"  onSubmit={handleSubmit}>
+                <form className="p-4 max-w-3xl mb-2 pb-64 mx-auto space-y-6 my-30 border-t border-gray-300 "  onSubmit={handleSubmit}>
                    <h1 className="text-3xl font-semibold">Create Todo</h1>
                    
                     <div className="w-1/2">

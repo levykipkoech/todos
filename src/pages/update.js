@@ -34,7 +34,7 @@ const Update = () => {
 
     return (
         <div>
-            <form className="px-4 max-w-3xl mx-auto space-y-6 my-30"  onSubmit={handleSubmit}>
+            <form className="px-4 max-w-3xl mx-auto space-y-6 my-30 border-t border-grey-200"  onSubmit={handleSubmit}>
                    <h1 className="text-3xl font-semibold">Update</h1>
                    
                     <div className="w-1/2">

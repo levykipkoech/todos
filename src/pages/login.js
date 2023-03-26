@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const Login = () => {
-    const [username, setUsername] = useState("");
+     
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
@@ -32,11 +32,11 @@ const Login = () => {
 
     return (
         <div className="login">
-         <form onSubmit={handleLogin} className="px-4 max-w-3xl mx-auto space-y-6 my-30" >
+         <form onSubmit={handleLogin} className="px-4 max-w-3xl mx-auto space-y-6 my-30 border-t border-grey-200" >
              
-            <div className="w-1/2">
+            <div className="w-1/2 ">
             <label>Email</label>
-            <input className="border border-gray-400 block py-2 px-4 w-full rounded focus:outline-none focus:border-blue-500" 
+            <input className="border border-gray-400 block py-2 px-4 w-full rounded focus:outline-none focus:border-red-500" 
                type="text" 
                placeholder="Enter email" 
                value={email} onChange={(e) => setEmail(e.target.value)} 
