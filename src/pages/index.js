@@ -4,6 +4,7 @@ export default function Home() {
     
       <div>
           <h2>Home page</h2>
+          
       </div>
      
   );

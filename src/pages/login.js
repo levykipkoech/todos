@@ -13,11 +13,22 @@ const Login = () => {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({ email, password }),
+            
         });
+        
+       
         const data = await response.json();
         console.log(data);
-        // do something with the response, such as redirect the user to a different page
     };
+
+   //  if (response.ok) {
+       
+   //    history.push("/create");
+   //  } else {
+       
+   //    console.error("invalid email or password");
+   //  }
+
 
     return (
         <div className="login">
@@ -28,6 +39,10 @@ const Login = () => {
             <label>password</label>
             <input type="password" placeholder="Enter password" value={password} onChange={(e) => setPassword(e.target.value)} required></input>
             <button onClick={handleLogin}>Log in</button>
+
+            <h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1>
         </div>
     );
 };
