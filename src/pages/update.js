@@ -34,17 +34,57 @@ const Update = () => {
 
     return (
         <div>
-            <form onSubmit={handleSubmit}>
-                <label>Title</label>
-                <input type="text" placeholder="Enter title" name="title" value={formData.title} onChange={handleChange} required />
-                <label>Description</label>
-                <input type="text" placeholder="Enter description" name="description" value={formData.description} onChange={handleChange} required />
-                <label>Status</label>
-                <input type="text" placeholder="Enter status" name="status" value={formData.status} onChange={handleChange} required />
-                <label>Priority</label>
-                <input type="text" placeholder="Enter priority" name="priority" value={formData.priority} onChange={handleChange} required />
-                <button type="submit">Submit</button>
-            </form>
+            <form className="px-4 max-w-3xl mx-auto space-y-6 my-30"  onSubmit={handleSubmit}>
+                   <h1 className="text-3xl font-semibold">Update</h1>
+                   
+                    <div className="w-1/2">
+                      <label>Title</label>
+                      <input className="border border-gray-400 block py-2 px-4 w-full rounded focus:outline-none focus:border-red-500" 
+                        type="text" 
+                        placeholder="Enter title" 
+                        value={formData.title} 
+                        onChange={e => setTitle(e.target.value)} 
+                        required
+                     /> 
+                    </div>
+                    
+                    <div className="w-3/4">
+                    <label>Description</label>
+                    <input className="border border-gray-400 block py-2 px-4 w-full rounded focus:outline-none focus:border-blue-500" 
+                        type="text" 
+                        placeholder="Enter description" 
+                        value={formData.description}
+                        onChange={e => setDescription(e.target.value)} 
+                        required
+                     /> 
+                    </div>
+                      <div className="flex space-x-4">
+                      <div className="w-1/4">
+                      <label>Status</label>
+                      <input className="border border-gray-400 block py-2 px-4 w-full rounded focus:outline-none focus:border-blue-500" 
+                        type="text" 
+                        placeholder="Enter status" 
+                        value={formData.status}
+                        onChange={e => setStatus(e.target.value)} 
+                        required 
+                        />
+                        </div>
+
+                    <div className="w-1/4   ">
+                    <label>Priority</label>
+                    <input className="border border-gray-400 block py-2 px-4 w-full rounded focus:outline-none focus:border-blue-500" 
+                        type="text" 
+                        placeholder="Enter priority" 
+                        value={formData.priority} onChange={e => setPriority(e.target.value)} 
+                        required 
+                    /> 
+                    </div>
+                      </div>
+                    
+
+                    <button type="submit">Submit</button>
+                    
+                </form>  
         </div>
     );
 }

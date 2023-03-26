@@ -2,12 +2,12 @@ import Link from "next/link";
 
 const Navbar = () => {
     return ( 
-        
+        <div>
         <nav>
             <div>
             <h1>Todo APPLICATION</h1>
             </div>
-            <div className="flex justify-center md:justify-end">
+            <div>
                 <div>
                 <Link href="/create" legacyBehavior><a>Create Todo</a></Link>
                 </div>
@@ -18,10 +18,11 @@ const Navbar = () => {
                 <Link href="/login" legacyBehavior><a>sign in</a></Link>
                 </div>
             </div>
-          <div  className="text-primary font-bold underline" >
+          <div>
           <Link href="/todos" legacyBehavior><a>view todos</a></Link>
           </div>
         </nav>
+        </div>
      );
 }
  

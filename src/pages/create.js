@@ -25,17 +25,58 @@ const Create = () => {
             <Head>
                 <title>Create Todo | Home</title>
             </Head>
-            <div>
-                <form onSubmit={handleSubmit}>
-                    <label>Title</label>
-                    <input type="text" placeholder="Enter title" value={title} onChange={e => setTitle(e.target.value)} required></input>
+            <div className= "">
+
+                <form className="px-4 max-w-3xl mx-auto space-y-6 my-30"  onSubmit={handleSubmit}>
+                   <h1 className="text-3xl font-semibold">Create Todo</h1>
+                   
+                    <div className="w-1/2">
+                      <label>Title</label>
+                      <input className="border border-gray-400 block py-2 px-4 w-full rounded focus:outline-none focus:border-red-500" 
+                        type="text" 
+                        placeholder="Enter title" 
+                        value={title} 
+                        onChange={e => setTitle(e.target.value)} 
+                        required
+                     /> 
+                    </div>
+                    
+                    <div className="w-3/4">
                     <label>Description</label>
-                    <input type="text" placeholder="Enter description" value={description} onChange={e => setDescription(e.target.value)} required></input>
-                    <label>Status</label>
-                    <input type="text" placeholder="Enter status" value={status} onChange={e => setStatus(e.target.value)} required></input>
+                    <input className="border border-gray-400 block py-2 px-4 w-full rounded focus:outline-none focus:border-blue-500" 
+                        type="text" 
+                        placeholder="Enter description" 
+                        value={description}
+                        onChange={e => setDescription(e.target.value)} 
+                        required
+                     /> 
+                    </div>
+                      <div className="flex space-x-4">
+                      <div className="w-1/4">
+                      <label>Status</label>
+                      <input className="border border-gray-400 block py-2 px-4 w-full rounded focus:outline-none focus:border-blue-500" 
+                        type="text" 
+                        placeholder="Enter status" 
+                        value={status}
+                        onChange={e => setStatus(e.target.value)} 
+                        required 
+                        />
+                        </div>
+
+                    <div className="w-1/4   ">
                     <label>Priority</label>
-                    <input type="text" placeholder="Enter priority" value={priority} onChange={e => setPriority(e.target.value)} required></input>
+                    <input className="border border-gray-400 block py-2 px-4 w-full rounded focus:outline-none focus:border-blue-500" 
+                        type="text" 
+                        placeholder="Enter priority" 
+                        value={priority} onChange={e => setPriority(e.target.value)} 
+                        required 
+                    /> 
+                    </div>
+                      </div>
+                    
+
                     <button type="submit">Submit</button>
+                    
                 </form>  
             </div>
         </>
