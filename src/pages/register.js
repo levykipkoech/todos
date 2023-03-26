@@ -31,6 +31,7 @@ const Registration = () => {
     return ( 
         <div>
             <form onSubmit={handleSubmit} className="px-4 max-w-3xl mx-auto space-y-6 my-30 border-t border-grey-200" >
+            <h1 className="text-3xl font-semibold">Sign Up</h1>
             <div className="w-1/2">
             <label>username</label>
             <input className="border border-gray-400 block py-2 px-4 w-full rounded focus:outline-none focus:border-blue-900"
